@@ -1,22 +1,35 @@
-import { useState } from 'react';
 import './App.css';
-import { ATTRIBUTE_LIST, CLASS_LIST, SKILL_LIST } from './consts.js';
 
+/* Provider */
+import { CharacterProvider } from './features/characters/characterContext';
+
+/* Common Components */
+import HStack from './components/common/HStack/HStack';
+import VStack from './components/common/VStack/VStack';
+
+/* Features */
+import CharacterSelection from './features/characters/components/CharactSelection';
+import CharacterSheet from './features/characters';
 
 function App() {
-  const [num, setNum] = useState(0);
   return (
     <div className="App">
       <header className="App-header">
-        <h1>React Coding Exercise</h1>
+        <h1>React Coding Exercise - Joe Fong</h1>
       </header>
       <section className="App-section">
-        <div>
-          Value:
-          {num}
-          <button>+</button>
-          <button>-</button>
-        </div>
+        <CharacterProvider>
+          <HStack>
+            <VStack>
+                {/* Section for Character Selection */}
+                <CharacterSelection/>
+            </VStack>
+          </HStack>
+
+          <HStack>
+            <CharacterSheet/>
+          </HStack>
+        </CharacterProvider>
       </section>
     </div>
   );
