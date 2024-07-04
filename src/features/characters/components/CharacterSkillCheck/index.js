@@ -89,7 +89,7 @@ const CharacterSkillCheck = ({ party }) => {
             {
                 results !== null ? (
                     <div>
-                        <h3>{roller?.name}</h3>
+                        <h3>Character: {roller?.name}</h3>
                         <h3>{resultLabel}</h3>
                         <p>Roll: {rollResults}</p>
                     </div>
