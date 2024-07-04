@@ -6,7 +6,7 @@ This application has 2 layers, a context that manages data pertaining characters
 
 1. To create a context that stored the global data about a character
   - To also poll character data from the API endpoint 
-  - To export character data from the API endpoing 
+  - To export character data to the API endpoint 
   - Calculate meta data regarding characters such as skill points, remaining stats and skills.  
 
 The context was to act as the global store to push and pull data to the core components. This was done to avoid prop drilling and to have a centralized area to manage character data. 
