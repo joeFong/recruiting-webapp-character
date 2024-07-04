@@ -20,15 +20,15 @@ The context was to act as the global store to push and pull data to the core com
 
 Each core component was to handle a disctinct role within the app. 
 
-The <CharacterSelection/> component was to handle adding, saving, deleting, and selecting characters. 
+The `<CharacterSelection/>` component was to handle adding, saving, deleting, and selecting characters. 
 
-The <CharacterSkillCheck/> component was the playground to test if the character can pass the DC check for a certain skill, as well as be extended to check for party skill as well via props. This was done to reduce the repeated code & logic. 
+The `<CharacterSkillCheck/>` component was the playground to test if the character can pass the DC check for a certain skill, as well as be extended to check for party skill as well via props. This was done to reduce the repeated code & logic. 
 
-The <CharacterSkillSlider/> component to allow incrementing and decrementing character skills 
+The `<CharacterSkillSlider/>` component to allow incrementing and decrementing character skills 
 
-The <CharacterAttributes/> component to allow incrementing and decrementing character stats 
+The `<CharacterAttributes/>` component to allow incrementing and decrementing character stats 
 
-The <CharacterClasses/> component to show available classes and class eligibility based on character stats
+The `<CharacterClasses/>` component to show available classes and class eligibility based on character stats
 
 # Final Notes 
 
