@@ -8,7 +8,7 @@ import HStack from './components/common/HStack/HStack';
 import VStack from './components/common/VStack/VStack';
 
 /* Features */
-import CharacterSelection from './features/characters/components/CharactSelection';
+import CharacterSelection from './features/characters/components/CharacterSelection';
 import CharacterSheet from './features/characters';
 
 function App() {
